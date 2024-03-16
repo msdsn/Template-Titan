@@ -19,6 +19,10 @@
         <li>{{ i }}</li>
         {% endfor %}
     </ul>
-   
+    {% if pageNum == 1 %}
+        <p>it's 1</p>
+    {% else %}
+        <p>it's not 1</p>
+    {% endif %}
 </body>
 </html>
