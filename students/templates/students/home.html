@@ -8,5 +8,17 @@
 <body>
     <h1>HELLO</h1>
     <h2>{{ title }}</h2>
+    <h3>{{ description }}</h3>
+    <p>{{ pageNum }}</p>
+    <p>{{ authorsList }}</p>
+    <p>{{ authorsList.1 }}</p>
+    <p>{{ authorsDict }}</p>
+    <p>{{ authorsDict.key1 }}</p>
+    <ul>
+        {% for i in authorsList %}
+        <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+   
 </body>
 </html>
