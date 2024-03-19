@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>HELLO</h1>
-    <h2>{{ title }}</h2>
-    <h3>{{ description }}</h3>
-    <p>{{ pageNum }}</p>
-    <p>{{ authorsList }}</p>
-    <p>{{ authorsList.1 }}</p>
-    <p>{{ authorsDict }}</p>
-    <p>{{ authorsDict.key1 }}</p>
-    <ul>
-        {% for i in authorsList %}
-        <li>{{ i }}</li>
-        {% endfor %}
-    </ul>
-    {% if pageNum == 1 %}
-        <p>it's 1</p>
-    {% else %}
-        <p>it's not 1</p>
-    {% endif %}
-</body>
-</html>
+{% extends "base.html" %}
+{% block body %}
+    <h1>Home</h1>
+    <p>Welcome to the home page!</p>
+{% endblock %}
