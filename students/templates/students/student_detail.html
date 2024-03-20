@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+
+
+{% block body %}
+    <h2>Student Info</h2>
+    <img src="{{ student.image.url }}" alt="student photo" style="width: 200px; height: 200px;">
+    <p>Student Name: {{ student.first_name }}</p>
+    <p>Student Last Name: {{ student.last_name }}</p>
+
+{% endblock %}
