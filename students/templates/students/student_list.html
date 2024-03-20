@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+
+{% block body %}
+    <h2>Students</h2>
+    <ul>
+        {% for student in students %}
+            <li>{{ student }} - {{ student.number }} </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
